@@ -1,0 +1,15 @@
+[{
+  "Name": "dedent",
+  "Description": "Dedent the next line if current line matches a pattern",
+  "Website": "https://github.com/Jenny-hso/dedent",
+  "Tags": [],
+  "Versions": [
+    {
+      "Version": "1.0.0",
+      "Url": "https://github.com/Jenny-hso/dedent/archive/v1.0.0.zip",
+      "Require": {
+        "micro": ">=2.0.0"
+      }
+    }
+  ]
+}]
