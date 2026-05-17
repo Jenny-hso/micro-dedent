@@ -6,7 +6,7 @@
   "Versions": [
     {
       "Version": "1.0.0",
-      "Url": "https://github.com/Jenny-hso/micro-dedent/archive/v1.0.0.zip",
+      "Url": "https://github.com/Jenny-hso/micro-dedent/archive/refs/tags/v1.0.0.zip",
       "Require": {
         "micro": ">=2.0.0"
       }
