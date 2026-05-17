@@ -6,7 +6,20 @@ Autodedent a new line if a current one matches a Go regular expression.
 
 To install the plugin, clone this repository to your `.config/micro/plug/` via `git clone https://github.com/Jenny-hso/micro-dedent`.
 
-In the future, you may have access to it via [the unofficial micro plugin channel](https://github.com/Neko-Box-Coder/unofficial-plugin-channel). Once it happens, `README.md` is going to be updated.
+Alternatively, you may install it via [the unofficial micro plugin channel](https://github.com/Neko-Box-Coder/unofficial-plugin-channel):
+1. Add the unofficial channes to your channels list:
+```
+x// settings.json
+{
+    "pluginchannels": [
+        "https://raw.githubusercontent.com/Neko-Box-Coder/unofficial-plugin-channel/main/channel.json"
+    ]
+}
+```
+2. Install:
+```bash
+$ micro -plugin install dedent
+```
 
 ## Usage
 
