@@ -13,6 +13,11 @@ function shouldDedent(bp)
    end
 
    local line = bp.Buf:Line(bp.Cursor.Y)
+
+   if bp.Cursor.X < #line then
+      return false
+   end
+
    local matched, err = regexp.MatchString(regex, line)
 
    if err ~= nil then
