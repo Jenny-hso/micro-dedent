@@ -35,6 +35,8 @@ These settings will result in dedenting all lines that consist only from the `pa
 }
 ```
 
+Additionally, you may specify when to NOT dedent a new line. To do this, set the `indent.unless` option to a valid Go regular expression.
+
 ## License
 
 This plugin is licensed under CC0-1.0. For details, see [LICENSE](LICENSE).
