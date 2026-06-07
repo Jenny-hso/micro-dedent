@@ -90,5 +90,5 @@ end
 function preinit()
    config.RegisterCommonOption("dedent", "regex", "")
    config.RegisterCommonOption("dedent", "unless", "")
-   -- config.AddRuntimeFile("dedent", config.RTHelp, "help/dedent.md")
+   config.AddRuntimeFile("dedent", config.RTHelp, "README.md")
 end
