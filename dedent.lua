@@ -25,6 +25,23 @@ function shouldDedent(bp)
       return false
    end
 
+   local unless_regex = bp.Buf.Settings["dedent.unless"]
+
+   if unless_regex == "" then
+      return true
+   end
+
+   local matched, err = regexp.MatchString(regex, line)
+
+   if err ~= nil then
+      micro.InfoBar():Error(err)
+      return false
+   end
+
+   if matched then
+      return false
+   end
+
    return true
 end
 
@@ -72,5 +89,6 @@ end
 
 function preinit()
    config.RegisterCommonOption("dedent", "regex", "")
+   config.RegisterCommonOption("dedent", "unless", "")
    -- config.AddRuntimeFile("dedent", config.RTHelp, "help/dedent.md")
 end
