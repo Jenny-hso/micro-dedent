@@ -7,15 +7,18 @@ Autodedent a new line if a current one matches a Go regular expression.
 To install the plugin, clone this repository to your `.config/micro/plug/` via `git clone https://github.com/Jenny-hso/micro-dedent`.
 
 Alternatively, you may install it via [the unofficial micro plugin channel](https://github.com/Neko-Box-Coder/unofficial-plugin-channel):
+
 1. Add the unofficial channes to your channels list:
-```
-x// settings.json
+
+```json
+// settings.json
 {
     "pluginchannels": [
         "https://raw.githubusercontent.com/Neko-Box-Coder/unofficial-plugin-channel/main/channel.json"
     ]
 }
 ```
+
 2. Install:
 ```bash
 $ micro -plugin install dedent
@@ -25,10 +28,10 @@ $ micro -plugin install dedent
 
 To use the plugin, set the `dedent.regex` setting in your `settings.json` to a non-empty regular expression:
 
-Here's an example for Python 3:
+These settings will result in dedenting all lines that consist only from the `pass` keyword and preceding space characters:
 ```json
 "ft:python": {
-   "indent.regex": "^\\s+pass"
+   "indent.regex": "^\\s+pass$"
 }
 ```
 
