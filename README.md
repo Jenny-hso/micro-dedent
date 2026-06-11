@@ -31,11 +31,11 @@ To use the plugin, set the `dedent.regex` setting in your `settings.json` to a n
 These settings will result in dedenting all lines that consist only from the `pass` keyword and preceding space characters:
 ```json
 "ft:python": {
-   "indent.regex": "^\\s+pass$"
+   "dedent.regex": "^\\s+pass$"
 }
 ```
 
-Additionally, you may specify when to NOT dedent a new line. To do this, set the `indent.unless` option to a valid Go regular expression.
+Additionally, you may specify when to NOT dedent a new line. To do this, set the `dedent.unless` option to a valid Go regular expression.
 
 ## License
 
